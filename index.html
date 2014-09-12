@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
     <meta name="description" content="">
 
-    <title></title>
+    <title>MoneyPouch</title>
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="author" href="http://alexbezuska.com/">
-    
+
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -21,19 +21,64 @@
 <![endif]-->
 
 <header>
-    <h1></h1>
+<h1>MoneyPouch</h1>
 </header>
-
 <div class="page">
-<input type="text" id="name" placeholder="Name"><br/>
-<input type="email" id="email" placeholder="Email"><br/>
-<button id="addButton">Add Data</button>¡
+    <h2> add a new entity</h2>
+    
+
+        <span>Name:</span>
+        <input id="txtName" type="text"></input>
+    </br>
+    <span>Type:</span>
+    <select id="entityTypeSelect">
+        <option>Account</option>
+        <option>Credit</option>
+        <option>Loan</option>
+        <option>Bill</option>
+    </select>
+     </br>
+        <span>CreditLimit:</span>
+        <input id="txtLimit" type="text" data-mask="money"></input>
+        </br>
+         <span>Balance:</span>
+        <input id="txtBalance" type="text" data-mask="money"></input>
+        </br>
+        <span>currentPayment:</span>
+        <input id="txtPayment" type="text" data-mask="money"></input>
+        </br>
+         <span>interestRate:</span>
+        <input id="txtInterestRate" type="text" data-mask="percent"></input>
+        </br>
+         <span>note:</span>
+        <textarea id="txtNote" type="text"></textarea>
+        </br>
+         <span>paidThisMonth:</span>
+        <input id="chkPaidThisMonth" type="checkbox" ></input>
+        </br>
+        <button id="add">+</button>
+
+       
+    
+    
+  <h2> current entities</h2>
+
+        <ul id="MoneyPouch-list"></ul>
+   
+    <footer id="footer">
+        <span id="todo-count"></span>
+        <div id="sync-wrapper">
+            <div id="sync-success">Currently syncing</div>
+            <div id="sync-error">There was a problem syncing</div>
+        </div>
+    </footer>
 </div>
 
-<footer>
-</footer>
-
+<script src="//cdn.jsdelivr.net/pouchdb/3.0.5/pouchdb.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
+
 </body>
 </html>
 
