@@ -1,0 +1,100 @@
+//  History
+
+#MoneyPouch-list {
+  margin: 0 auto; 
+  padding: 0;
+   &:after{
+    clear: both;
+    display: table;
+    content:"";
+    }
+  li {
+    list-style-type: none;
+    position: relative;
+    background: rgba(255,255,255, .8);
+    
+    border-bottom: 1px solid darken($light, 25%);
+    width: 25%;
+    height: 300px;
+    margin: 2px;
+   
+    float: left;
+    
+.name{
+  position: relative;
+  display: block;
+  width: 100%;
+  background: darken($light, 15%);
+  color: white;
+  height: 32px;
+  padding: 10px;
+  text-align: center;
+}
+
+.type{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+
+.limit{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+ 
+.balance{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+
+.payment{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+ 
+.interest{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+ 
+.note{
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+
+.paidThisMonth{
+   position: relative;
+  display: block;
+  padding: 4px 10px;
+}
+
+    .remove {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 0px;
+      font-size: 1rem;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      color: rgba(255,255,255,.7);
+      background: darken($light, 5%);
+      &:hover {
+        cursor: pointer;
+        background: darken($light, 10%);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

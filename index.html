@@ -26,7 +26,8 @@
 <div class="page">
     <h2> add a new entity</h2>
     
-
+<form class="row">
+    <div class="col1-2">
         <span>Name:</span>
         <input id="txtName" type="text"></input>
     </br>
@@ -38,6 +39,11 @@
         <option>Bill</option>
     </select>
      </br>
+      <span>note:</span>
+        <textarea id="txtNote" type="text"></textarea>
+        </br>
+    </div>
+      <div class="col1-2">
         <span>CreditLimit:</span>
         <input id="txtLimit" type="text" data-mask="money"></input>
         </br>
@@ -50,16 +56,14 @@
          <span>interestRate:</span>
         <input id="txtInterestRate" type="text" data-mask="percent"></input>
         </br>
-         <span>note:</span>
-        <textarea id="txtNote" type="text"></textarea>
-        </br>
+        
          <span>paidThisMonth:</span>
         <input id="chkPaidThisMonth" type="checkbox" ></input>
         </br>
         <button id="add">+</button>
-
+  </div >
        
-    
+    </form>
     
   <h2> current entities</h2>
 

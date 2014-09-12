@@ -1,2 +1,427 @@
+/*
+
+	Sass Minifest
+
+*/
 body {
-  background: #bdb8ad; }
+  padding: 0px;
+  margin: 0px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.center {
+  margin: 0 auto; }
+
+.row:after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+.col, .col1-1,
+.col2-2,
+.col3-3,
+.col4-4,
+.col5-5,
+.col6-6,
+.col7-7,
+.col8-8,
+.col9-9,
+.col10-10, .col1-2,
+.col2-4,
+.col3-6,
+.col4-8,
+.col5-10, .col1-3,
+.col3-9, .col2-3,
+.col4-6,
+.col6-9, .col1-4,
+.col2-8, .col3-4, .col1-5,
+.col2-10, .col4-5,
+.col8-10, .col1-6, .col5-6, .col1-7, .col2-7, .col3-7, .col4-7, .col5-7, .col6-7, .col1-8, .col3-8, .col5-8, .col7-8, .col1-9, .col2-9, .col4-9, .col5-9, .col7-9, .col8-9, .col1-10, .col3-10, .col4-10, .col6-10, .col7-10, .col9-10 {
+  display: inline-block;
+  float: left; }
+  @media (min-width: 320px) and (max-width: 730px) {
+    .col, .col1-1,
+    .col2-2,
+    .col3-3,
+    .col4-4,
+    .col5-5,
+    .col6-6,
+    .col7-7,
+    .col8-8,
+    .col9-9,
+    .col10-10, .col1-2,
+    .col2-4,
+    .col3-6,
+    .col4-8,
+    .col5-10, .col1-3,
+    .col3-9, .col2-3,
+    .col4-6,
+    .col6-9, .col1-4,
+    .col2-8, .col3-4, .col1-5,
+    .col2-10, .col4-5,
+    .col8-10, .col1-6, .col5-6, .col1-7, .col2-7, .col3-7, .col4-7, .col5-7, .col6-7, .col1-8, .col3-8, .col5-8, .col7-8, .col1-9, .col2-9, .col4-9, .col5-9, .col7-9, .col8-9, .col1-10, .col3-10, .col4-10, .col6-10, .col7-10, .col9-10 {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 731px) and (max-width: 1024px) {
+    .col, .col1-1,
+    .col2-2,
+    .col3-3,
+    .col4-4,
+    .col5-5,
+    .col6-6,
+    .col7-7,
+    .col8-8,
+    .col9-9,
+    .col10-10, .col1-2,
+    .col2-4,
+    .col3-6,
+    .col4-8,
+    .col5-10, .col1-3,
+    .col3-9, .col2-3,
+    .col4-6,
+    .col6-9, .col1-4,
+    .col2-8, .col3-4, .col1-5,
+    .col2-10, .col4-5,
+    .col8-10, .col1-6, .col5-6, .col1-7, .col2-7, .col3-7, .col4-7, .col5-7, .col6-7, .col1-8, .col3-8, .col5-8, .col7-8, .col1-9, .col2-9, .col4-9, .col5-9, .col7-9, .col8-9, .col1-10, .col3-10, .col4-10, .col6-10, .col7-10, .col9-10 {
+      padding-left: 5px;
+      padding-right: 5px; } }
+  @media (min-width: 1025px) {
+    .col, .col1-1,
+    .col2-2,
+    .col3-3,
+    .col4-4,
+    .col5-5,
+    .col6-6,
+    .col7-7,
+    .col8-8,
+    .col9-9,
+    .col10-10, .col1-2,
+    .col2-4,
+    .col3-6,
+    .col4-8,
+    .col5-10, .col1-3,
+    .col3-9, .col2-3,
+    .col4-6,
+    .col6-9, .col1-4,
+    .col2-8, .col3-4, .col1-5,
+    .col2-10, .col4-5,
+    .col8-10, .col1-6, .col5-6, .col1-7, .col2-7, .col3-7, .col4-7, .col5-7, .col6-7, .col1-8, .col3-8, .col5-8, .col7-8, .col1-9, .col2-9, .col4-9, .col5-9, .col7-9, .col8-9, .col1-10, .col3-10, .col4-10, .col6-10, .col7-10, .col9-10 {
+      padding-left: 5px;
+      padding-right: 5px; } }
+  .col img, .col1-1 img,
+  .col2-2 img,
+  .col3-3 img,
+  .col4-4 img,
+  .col5-5 img,
+  .col6-6 img,
+  .col7-7 img,
+  .col8-8 img,
+  .col9-9 img,
+  .col10-10 img, .col1-2 img,
+  .col2-4 img,
+  .col3-6 img,
+  .col4-8 img,
+  .col5-10 img, .col1-3 img,
+  .col3-9 img, .col2-3 img,
+  .col4-6 img,
+  .col6-9 img, .col1-4 img,
+  .col2-8 img, .col3-4 img, .col1-5 img,
+  .col2-10 img, .col4-5 img,
+  .col8-10 img, .col1-6 img, .col5-6 img, .col1-7 img, .col2-7 img, .col3-7 img, .col4-7 img, .col5-7 img, .col6-7 img, .col1-8 img, .col3-8 img, .col5-8 img, .col7-8 img, .col1-9 img, .col2-9 img, .col4-9 img, .col5-9 img, .col7-9 img, .col8-9 img, .col1-10 img, .col3-10 img, .col4-10 img, .col6-10 img, .col7-10 img, .col9-10 img {
+    max-width: 100%; }
+
+.module {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.col1-1,
+.col2-2,
+.col3-3,
+.col4-4,
+.col5-5,
+.col6-6,
+.col7-7,
+.col8-8,
+.col9-9,
+.col10-10 {
+  width: 100%; }
+
+.col1-2,
+.col2-4,
+.col3-6,
+.col4-8,
+.col5-10,
+.col5-10 {
+  width: 50%; }
+
+.col1-3,
+.col3-9 {
+  width: 33.3333333333%; }
+
+.col2-3,
+.col4-6,
+.col6-9 {
+  width: 66.6666666667%; }
+
+.col1-4,
+.col2-8 {
+  width: 25%; }
+
+.col3-4 {
+  width: 75%; }
+
+.col1-5,
+.col2-10 {
+  width: 20%; }
+
+.col4-5,
+.col8-10 {
+  width: 80%; }
+
+.col1-6 {
+  width: 16.6666667%; }
+
+.col5-6 {
+  width: 83.3333333%; }
+
+.col1-7 {
+  width: 14.2857142857%; }
+
+.col2-7 {
+  width: 28.5714285714%; }
+
+.col3-7 {
+  width: 42.8571428571%; }
+
+.col4-7 {
+  width: 57.1428571429%; }
+
+.col5-7 {
+  width: 71.4285714286%; }
+
+.col6-7 {
+  width: 85.7142857143%; }
+
+.col1-8 {
+  width: 14.2857142857%; }
+
+.col3-8 {
+  width: 37.5%; }
+
+.col5-8 {
+  width: 62.5%; }
+
+.col7-8 {
+  width: 87.5%; }
+
+.col1-9 {
+  width: 11.1111111111%; }
+
+.col2-9 {
+  width: 22.2222222222%; }
+
+.col4-9 {
+  width: 44.4444444444%; }
+
+.col5-9 {
+  width: 55.5555555556%; }
+
+.col7-9 {
+  width: 77.7777777778%; }
+
+.col8-9 {
+  width: 88.8888888889%; }
+
+.col1-10 {
+  width: 10%; }
+
+.col3-10 {
+  width: 30%; }
+
+.col4-10 {
+  width: 40%; }
+
+.col6-10 {
+  width: 60%; }
+
+.col7-10 {
+  width: 70%; }
+
+.col9-10 {
+  width: 90%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: "helvetica neue", helvetica, verdana, sans-serif;
+  font-weight: 200;
+  letter-spacing: .1rem; }
+
+body {
+  background: #4a444a; }
+
+header {
+  border-radius: 10px;
+  margin: 15px auto;
+  width: 80%; }
+  header h1 {
+    color: white;
+    font-family: "helvetica neue", verdana, sans-serif;
+    font-weight: 100;
+    letter-spacing: .15rem; }
+
+.page {
+  background: #cbc6cb;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 80%; }
+
+.hidden {
+  display: none; }
+
+#sync-error, #sync-success {
+  display: none; }
+
+[data-sync-state=syncing] #sync-success {
+  display: block; }
+
+[data-sync-state=error] #sync-error {
+  display: block; }
+
+form {
+  margin: 5.5px auto; }
+  form span {
+    margin: 5px 5px 10px 0;
+    display: block; }
+  form input[type="text"] {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    font-size: 18px;
+    padding: 5px;
+    border: 0; }
+  form textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    padding: 5px;
+    border: 0; }
+  form select {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    font-size: 18px;
+    padding: 5px; }
+  form #amount {
+    text-align: right;
+    font-size: 1.8rem;
+    width: 70%;
+    height: 55px;
+    margin: 0 0 0 5.5px;
+    vertical-align: top;
+    display: inline-block; }
+  form #add {
+    display: inline-block;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #d4e5e6;
+    color: #353938;
+    border: 0px;
+    font-size: 1.8rem;
+    height: 55px;
+    width: 55px;
+    border-radius: 55px;
+    margin: 0 auto;
+    padding: 0 0 5px 0;
+    vertical-align: top;
+    text-align: center; }
+    form #add:hover {
+      cursor: pointer;
+      background: #c4dbdd; }
+    form #add:active {
+      background: #c4dbdd; }
+
+#MoneyPouch-list {
+  margin: 0 auto;
+  padding: 0; }
+  #MoneyPouch-list:after {
+    clear: both;
+    display: table;
+    content: ""; }
+  #MoneyPouch-list li {
+    list-style-type: none;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #988e98;
+    width: 25%;
+    height: 300px;
+    margin: 2px;
+    float: left; }
+    #MoneyPouch-list li .name {
+      position: relative;
+      display: block;
+      width: 100%;
+      background: #b0a9b0;
+      color: white;
+      height: 32px;
+      padding: 10px;
+      text-align: center; }
+    #MoneyPouch-list li .type {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .limit {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .balance {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .payment {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .interest {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .note {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .paidThisMonth {
+      position: relative;
+      display: block;
+      padding: 4px 10px; }
+    #MoneyPouch-list li .remove {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 0px;
+      font-size: 1rem;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      color: rgba(255, 255, 255, 0.7);
+      background: #c9c4c9; }
+      #MoneyPouch-list li .remove:hover {
+        cursor: pointer;
+        background: #bdb6bd; }

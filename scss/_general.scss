@@ -1,0 +1,54 @@
+$finger-size: 55px;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "helvetica neue", helvetica, verdana, sans-serif;
+	font-weight: 200;
+	letter-spacing: .1rem;
+}
+
+body {
+		background: darken($light, 55%);
+	
+}
+
+header{
+	h1{
+		color: white;
+		font-family: "helvetica neue", verdana, sans-serif;
+		font-weight: 100;
+		letter-spacing: .15rem;
+	}
+	
+		border-radius: 10px;
+		margin: 15px auto;
+		width: 80%;
+}
+.page{
+		background: darken($light, 4%);
+		padding: 30px 15px;
+		border-radius: 10px;
+		margin: 0 auto;
+		width: 80%;
+}
+
+.hidden{
+	display:none;
+}
+
+#sync-error, #sync-success {
+	display: none;
+}
+
+[data-sync-state=syncing] #sync-success {
+	display: block;
+}
+
+[data-sync-state=error] #sync-error {
+	display: block;
+}

@@ -122,43 +122,43 @@
 
 
 
-        var name = document.createElement('name');
+        var name = document.createElement('span');
         name.appendChild(document.createTextNode(MoneyPouch.name));
         name.className = 'name';
 
-        var type = document.createElement('type');
+        var type = document.createElement('span');
         type.appendChild(document.createTextNode(MoneyPouch.type));
         type.className = 'type';
 
-        var limit = document.createElement('limit');
-        limit.appendChild(document.createTextNode(MoneyPouch.limit));
+        var limit = document.createElement('span');
+        limit.appendChild(document.createTextNode("Limit: " + MoneyPouch.limit));
         limit.className = 'limit';
 
-        var balance = document.createElement('balance');
-        balance.appendChild(document.createTextNode(MoneyPouch.balance));
+        var balance = document.createElement('span');
+        balance.appendChild(document.createTextNode("Balance: " + MoneyPouch.balance));
         balance.className = 'balance';
 
-        var payment = document.createElement('payment');
-        payment.appendChild(document.createTextNode(MoneyPouch.payment));
+        var payment = document.createElement('span');
+        payment.appendChild(document.createTextNode("Payment: " + MoneyPouch.payment));
         payment.className = 'payment';
 
-        var interest = document.createElement('interest');
-        interest.appendChild(document.createTextNode(MoneyPouch.interest));
+        var interest = document.createElement('span');
+        interest.appendChild(document.createTextNode("APR: " + MoneyPouch.interest));
         interest.className = 'interest';
 
-        var note = document.createElement('note');
-        note.appendChild(document.createTextNode(MoneyPouch.note));
+        var note = document.createElement('span');
+        note.appendChild(document.createTextNode("Notes: " + MoneyPouch.note));
         note.className = 'note';
 
 
-        var paidThisMonth = document.createElement('paidThisMonth');
-        paidThisMonth.appendChild(document.createTextNode(MoneyPouch.paidThisMonth));
+        var paidThisMonth = document.createElement('span');
+        paidThisMonth.appendChild(document.createTextNode("Paid: " + MoneyPouch.paidThisMonth));
         paidThisMonth.className = 'paidThisMonth';
 
 
         var deleteLink = document.createElement('button');
         deleteLink.className = 'remove';
-        deleteLink.appendChild(document.createTextNode("-"));
+        deleteLink.appendChild(document.createTextNode("x"));
         deleteLink.addEventListener('click', deleteButtonPressed.bind(this, MoneyPouch));
 
 
