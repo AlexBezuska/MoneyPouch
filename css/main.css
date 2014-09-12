@@ -309,7 +309,7 @@ form {
   form input[type="text"] {
     position: relative;
     width: 100%;
-    height: 32px;
+    height: 24px;
     font-size: 18px;
     padding: 5px;
     border: 0; }

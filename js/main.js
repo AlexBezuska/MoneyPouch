@@ -226,6 +226,15 @@
 
     $(document).ready(function() {
 
+        // $('#entityTypeSelect').change(function() {
+        //     showRelevantFormItem(getSelectedEntityType());
+        // });
+
+        // function showRelevantFormItem(className) {
+        //     $('.formItem').hide();
+        //     $('.formItem.' + className.toLowerCase()).show();
+        // }
+
         $(document).on("mousedown touchstart", ".type div", function() {
             deactivateAllCategories();
             activateCategory(this);
@@ -259,7 +268,6 @@
     /*
      * Returns string of text of the current selected category name.
      */
-
     function getSelectedEntityType() {
         return document.getElementById('entityTypeSelect').value;
     }

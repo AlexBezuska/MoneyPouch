@@ -26,10 +26,10 @@
 <div class="page">
     <h2> add a new entity</h2>
     
-<form class="row">
-    <div class="col1-2">
-        <span>Name:</span>
-        <input id="txtName" type="text"></input>
+<form id="addEntity" class="row">
+    <div class="col1-3">
+            <span>Name:</span>
+            <input id="txtName" type="text"></input>
     </br>
     <span>Type:</span>
     <select id="entityTypeSelect">
@@ -39,27 +39,46 @@
         <option>Bill</option>
     </select>
      </br>
-      <span>note:</span>
-        <textarea id="txtNote" type="text"></textarea>
-        </br>
-    </div>
-      <div class="col1-2">
-        <span>CreditLimit:</span>
+       <div class="formItem credit">
+      <span>CreditLimit:</span>
         <input id="txtLimit" type="text" data-mask="money"></input>
         </br>
+    </div>
+          <div class="formItem account credit loan">
          <span>Balance:</span>
         <input id="txtBalance" type="text" data-mask="money"></input>
         </br>
-        <span>currentPayment:</span>
-        <input id="txtPayment" type="text" data-mask="money"></input>
-        </br>
-         <span>interestRate:</span>
+    </div>
+        
+        <div class="formItem credit loan">
+          <span>interestRate:</span>
         <input id="txtInterestRate" type="text" data-mask="percent"></input>
         </br>
+    </div>
         
-         <span>paidThisMonth:</span>
-        <input id="chkPaidThisMonth" type="checkbox" ></input>
+    </div>
+     <div class="col1-3">
+       
+       <div class="formItem credit bill">
+            <span>currentPayment:</span>
+         <input id="txtPayment" type="text" data-mask="money"></input>
+          </br>
+        </div>
+       
+       
+        <div class="formItem credit bill">
+             <span>paidThisMonth:</span>
+            <input id="chkPaidThisMonth" type="checkbox" ></input>
+            </br>
+        </div>
+        
+     
+    </div>
+      <div class="col1-3">
+         <span>note:</span>
+        <textarea id="txtNote" type="text"></textarea>
         </br>
+        
         <button id="add">+</button>
   </div >
        
@@ -82,7 +101,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
-
 </body>
 </html>
 
