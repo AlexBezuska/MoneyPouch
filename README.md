@@ -8,14 +8,16 @@ MoneyPouch will be a Chrome Web App for you to track your bills and finances. Mo
 
 ---
 
-####Planned Features
-
+####Current Features
 * create entities, entities can be accounts, credit line, loan, or bill
+* Data stored locally in PouchDB (indexedDB or webSQL depending on browser)
+
+
+####Planned Features
 * add/edit properties of an entity
 * drag to sort entities
 * sort by any of the properties
 * calculate remaining payments to payoff of loans and credit lines
-* Data stored locally in PouchDB (indexedDB or webSQL depending on browser)
 * Data sync with Money Pouch Go using CouchDB server
 
 ###Advanced/far future features
