@@ -283,8 +283,10 @@ header {
     letter-spacing: .15rem; }
 
 .page {
+  position: relative;
   background: #cbc6cb;
-  padding: 30px 15px;
+  border-bottom: 2px solid #a49ca4;
+  padding: 15px;
   border-radius: 10px;
   margin: 0 auto;
   width: 80%; }
@@ -301,32 +303,53 @@ header {
 [data-sync-state=error] #sync-error {
   display: block; }
 
-form {
-  margin: 5.5px auto; }
-  form span {
+#showForm, #hideForm {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 0px;
+  font-size: 1rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #988e98; }
+  #showForm:hover, #hideForm:hover {
+    cursor: pointer;
+    background: #7f747f; }
+
+#addEntity {
+  position: relative;
+  border-top: 1px solid #a49ca4;
+  background: #bdb6bd;
+  padding: 35px 15px;
+  border-radius: 10px;
+  margin: 5.5px auto;
+  display: none; }
+  #addEntity span {
     margin: 5px 5px 10px 0;
     display: block; }
-  form input[type="text"] {
+  #addEntity input[type="text"] {
     position: relative;
     width: 100%;
     height: 24px;
     font-size: 18px;
     padding: 5px;
     border: 0; }
-  form textarea {
+  #addEntity textarea {
     position: relative;
     width: 100%;
     height: 100px;
     font-size: 18px;
     padding: 5px;
     border: 0; }
-  form select {
+  #addEntity select {
     position: relative;
     width: 100%;
     height: 32px;
     font-size: 18px;
     padding: 5px; }
-  form #amount {
+  #addEntity #amount {
     text-align: right;
     font-size: 1.8rem;
     width: 70%;
@@ -334,14 +357,17 @@ form {
     margin: 0 0 0 5.5px;
     vertical-align: top;
     display: inline-block; }
-  form #add {
+  #addEntity #add {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
     display: inline-block;
     outline: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: #d4e5e6;
+    background: #d5d1d5;
     color: #353938;
     border: 0px;
     font-size: 1.8rem;
@@ -352,11 +378,11 @@ form {
     padding: 0 0 5px 0;
     vertical-align: top;
     text-align: center; }
-    form #add:hover {
+    #addEntity #add:hover {
       cursor: pointer;
-      background: #c4dbdd; }
-    form #add:active {
-      background: #c4dbdd; }
+      background: #c9c4c9; }
+    #addEntity #add:active {
+      background: #c9c4c9; }
 
 #MoneyPouch-list {
   margin: 0 auto;
@@ -368,21 +394,22 @@ form {
   #MoneyPouch-list li {
     list-style-type: none;
     position: relative;
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #988e98;
-    width: 25%;
-    height: 300px;
-    margin: 2px;
-    float: left; }
+    margin-bottom: 18px; }
+    #MoneyPouch-list li .module {
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom: 2px solid #a49ca4;
+      border-radius: 10px;
+      height: 300px; }
     #MoneyPouch-list li .name {
       position: relative;
       display: block;
       width: 100%;
       background: #b0a9b0;
       color: white;
-      height: 32px;
+      height: 36px;
       padding: 10px;
-      text-align: center; }
+      text-align: center;
+      border-radius: 10px 10px 0 0; }
     #MoneyPouch-list li .type {
       position: relative;
       display: block;
@@ -413,8 +440,8 @@ form {
       padding: 4px 10px; }
     #MoneyPouch-list li .remove {
       position: absolute;
-      top: 4px;
-      left: 4px;
+      top: 5px;
+      left: 5px;
       border: 0px;
       font-size: 1rem;
       width: 25px;

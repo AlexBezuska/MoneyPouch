@@ -39,6 +39,7 @@
             date: date,
             time: time,
         };
+        console.log(MoneyPouch);
         db.put(MoneyPouch).then(function(result) {
             console.log("everything is A-OK");
             console.log(result);
@@ -160,6 +161,7 @@
         deleteLink.className = 'remove';
         deleteLink.appendChild(document.createTextNode("x"));
         deleteLink.addEventListener('click', deleteButtonPressed.bind(this, MoneyPouch));
+        name.appendChild(deleteLink);
 
 
         // var inputEditMoneyPouch = document.createElement('input');
@@ -170,16 +172,19 @@
         // inputEditMoneyPouch.addEventListener('blur', MoneyPouchBlurred.bind(this, MoneyPouch));
 
         var li = document.createElement('li');
+        li.className = 'col1-3';
         li.id = 'li_' + MoneyPouch._id;
-        li.appendChild(name);
-        li.appendChild(type);
-        li.appendChild(limit);
-        li.appendChild(balance);
-        li.appendChild(payment);
-        li.appendChild(interest);
-        li.appendChild(note);
-        li.appendChild(paidThisMonth);
-        li.appendChild(deleteLink);
+        var module = document.createElement('div');
+        module.className = 'module';
+        module.appendChild(name);
+        module.appendChild(type);
+        module.appendChild(limit);
+        module.appendChild(balance);
+        module.appendChild(payment);
+        module.appendChild(interest);
+        module.appendChild(note);
+        module.appendChild(paidThisMonth);
+        li.appendChild(module);
 
         return li;
     }
@@ -194,7 +199,16 @@
 
 
     addButton.onclick = function() {
-
+        console.log(txtName.value);
+        console.log(getSelectedEntityType());
+        console.log(toMoney(txtLimit.value));
+        console.log(toMoney(txtBalance.value));
+        console.log(toMoney(txtPayment.value));
+        console.log(txtInterestRate.value);
+        console.log(txtNote.value);
+        console.log(chkPaidThisMonth.checked);
+        console.log(createDate());
+        console.log(createTime());
         addMoneyPouchItem(
             txtName.value,
             getSelectedEntityType(),
@@ -226,14 +240,24 @@
 
     $(document).ready(function() {
 
-        // $('#entityTypeSelect').change(function() {
-        //     showRelevantFormItem(getSelectedEntityType());
-        // });
+        $('#showForm').click(function() {
+            $('#showForm').hide();
+            $('#addEntity').slideDown();
+        });
 
-        // function showRelevantFormItem(className) {
-        //     $('.formItem').hide();
-        //     $('.formItem.' + className.toLowerCase()).show();
-        // }
+        $('#hideForm').click(function() {
+            $('#showForm').show();
+            $('#addEntity').slideUp();
+        });
+
+        $('#entityTypeSelect').change(function() {
+            showRelevantFormItem(getSelectedEntityType());
+        });
+
+        function showRelevantFormItem(className) {
+            $('.formItem').hide();
+            $('.formItem.' + className.toLowerCase()).show();
+        }
 
         $(document).on("mousedown touchstart", ".type div", function() {
             deactivateAllCategories();
